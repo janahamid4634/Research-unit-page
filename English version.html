@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوحدات البحثية</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Almarai', sans-serif;
+        }
+
+        .SearchUnit {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .text-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 4;
+            padding: 10px;
+        }
+
+        .text-content h1 {
+            font-size: 50px; /* Change font size to 40px */
+            font-weight: bold;
+        }
+
+        .text-content p {
+            font-size: 20px; /* Change font size to 30px */
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 5;
+            width: 80px;
+            height: auto;
+        }
+
+        .shadow-image {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+            opacity: 0.5;
+            width: 100%;
+            height: auto;
+        }
+
+        .main-image {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: auto;
+        }
+
+        .grid-item {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            padding-top: 100%;
+        }
+
+        .grid-item .text-container {
+            background-color: rgba(11,59,89,0.8);
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 14px ;
+            font-weight: bold;
+        }
+
+        /* Specific background images for each grid item */
+        .grid-item-1 { background-image: url('imag/project.jpg'); }
+        .grid-item-2 { background-image: url('imag/GCRjDbWXIAAHDvS.jpeg'); }
+        .grid-item-3 { background-image: url('imag/Activities.jpg'); }
+        .grid-item-4 { background-image: url('imag/F5b9sRKXkAAs27o.jpeg'); }
+        .grid-item-5 { background-image: url('imag/project1.jpg'); }
+        .grid-item-6 { background-image: url('imag/F2S-IkXWcAA4OLz.jpeg') }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 60px;
+            }
+
+            .text-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .text-content p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 50px;
+            }
+
+            .text-content h1 {
+                font-size: 1.2rem;
+            }
+
+            .text-content p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="SearchUnit position-relative my-4">
+            <img src="imag/CEIES Logo@4x 2.png" alt="Logo" class="logo">
+            <img src="imag/image 66.png" alt="Main Image" class="main-image">
+            <img src="imag/Rectangle 3.png" alt="Shadow Image" class="shadow-image">
+            <div class="text-content">
+                <h1>الوحدات البحثية</h1>
+                <p>الريادة في الابتكار وحلول التقنية المتقدمة في عالم الهندسة الذكية</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="grid-item grid-item-1">
+                    <div class="text-container">الروبوتات والأنظمة الآلية</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="grid-item grid-item-2">
+                    <div class="text-container">المركبات الكهربائية وأنظمة التحكم الذكية</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="grid-item grid-item-3">
+                    <div class="text-container">تقنيات الدفاع</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="grid-item grid-item-4">
+                    <div class="text-container">الاتصالات والفضاء</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="grid-item grid-item-5">
+                    <div class="text-container">الذكاء الاصطناعي وإنترنت الأشياء</div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="grid-item grid-item-6">
+                    <div class="text-container">التصوير الطبي والأجهزة</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
